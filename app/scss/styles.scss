@@ -1,0 +1,35 @@
+// in your main SCSS file
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+
+// import one or more styles
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+
+
+
+$primary-color: orange;
+$box: border-box;
+$font: "Operator Mono";
+
+h1 {
+    color: $primary-color;
+}
+
+.card {
+    box-sizing: $box;
+    width: 250px;
+    height: 200px;
+    border: solid red 1px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 0.5px gray;
+    margin: 20px auto;
+}
+
+.item {
+    width: 30px;
+    font-size: 20px;
+    font-family: $font;
+    margin: 10px auto;
+}
