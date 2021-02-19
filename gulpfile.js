@@ -54,8 +54,8 @@ function scssTask() {
 
 // Watch Task
 function watchTask() {
-  watch(['app/**/*.scss'], series(scssTask));
-  watch(['./index.html'], copy);
+  watch('app/**/*.scss', series(scssTask)); //if more file to watch in a signle statement then use, watch(['app/**/*.scss','...','...'], series(scssTask, ... , ...));
+  watch('./index.html', copy);
 }
 
 
